@@ -1,0 +1,34 @@
+.slogan {
+    width: 100%;
+    height: 110px;
+    text-align: center;
+    .slogan-wrapper {
+        max-width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: titleFlex infinite 3s;
+        #bt-title {
+            background-color: aliceblue;
+            color: black;
+            padding: 10px 20px;
+            margin: 5px;
+        }
+    }
+    @keyframes titleFlex {
+        0% {
+            
+        }
+        50% {
+            transform: skewx(30deg)rotate(5deg);
+            // transform: rotate(5deg);
+        }
+        75% {
+            transform: skewx(-30deg)rotate(-5deg);
+        }
+        100% {
+            transform: skew(0);
+        }
+    }
+}

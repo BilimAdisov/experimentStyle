@@ -1,0 +1,53 @@
+.service-list {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    .serlist-wrapper {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 70px 0;
+    }
+}
+
+.card-item-full {
+    width: 370px;
+    height: 450px;
+    border: 1px solid silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 15px;
+    background-color: black;
+    transition: 0.5s;
+    .icon-container {
+        * {
+            color: #2196f3;
+        }
+    }
+    .card-name {}
+    .card-title {
+        color: silver;
+        font-size: 14px;
+    }
+    .card-btn {
+        width: 70%;
+        height: 42px;
+        border-radius: 4px;
+        background-color: #2196f3;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .card-btn:hover {
+        background-color: #1662a0;
+    }
+}
+.card-item-full:hover {
+    background-color:#171717;
+}

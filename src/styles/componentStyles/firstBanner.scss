@@ -1,0 +1,120 @@
+.firban {
+    width: 100%;
+    height: 100%;
+    .firban-wrapper {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        .left-block {
+            width: 50%;
+            height: 100%;
+            .top {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    size: 200px;
+                    width: 100%;
+                    height: auto;
+                    transition: all 0.6s;
+                }
+                .dark-effect {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgb(0, 0, 0.5);
+                    transition: all 3s;
+                    opacity: 60%;
+                }
+            }
+            .top:hover {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+            .under {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h1 {
+                    font-size: 50px;
+                    transition: all 0.6s;
+                }
+                h1:hover {
+                    text-shadow: 
+                    0 0 1px #fff,
+                    0 0 2px #fff,
+                    0 0 5px #fff,
+                    0 0 11px #fff,
+                    0 0 20px #fff,
+                    ;
+                }
+            }
+        }
+        .right-block {
+            width: 50%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+            overflow: hidden;
+            position: relative;
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                size: 200px;
+                width: 100%;
+                height: auto;
+                transition: all 0.6s;
+            }
+            .dark-effect {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(0, 0, 0.5);
+                transition: all 3s;
+                opacity: 60%;
+            }       
+            h2 {
+                width: 90%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-size: 32px;
+            }      
+            @-webkit-keyframes pulsate {
+                50% { color: whitesmoke; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd; }
+               }
+               @keyframes pulsate {
+                50% { color: whitesmoke; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd; }
+               }
+               #blink {
+                 color: rgb(245,245,245);
+                 text-shadow: 0 -1px rgba(0,0,0,.1);
+                 -webkit-animation: pulsate 1.2s linear infinite;
+                 animation: pulsate 1.2s linear infinite;
+               }
+        }
+    }
+}

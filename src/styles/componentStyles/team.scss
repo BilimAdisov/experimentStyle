@@ -1,0 +1,40 @@
+.worker-card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 6px;
+    transition:all 0.6s;
+    padding: 30px 10px;
+    .avatar-container {
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: 0.6s;
+        .avatar {
+            width: 200px;
+        }
+    }
+    .worker-name {
+        color: whitesmoke;
+    }
+    .job-position {
+        z-index: -10;
+        color: black;
+    }
+}
+
+.worker-card:hover {
+    transform: translateY(-15px);
+    background-color: #171717;
+    .avatar-container {
+        opacity: 75%;
+    }
+    .job-position {
+        z-index: 1;
+        color: silver;
+    }
+}
